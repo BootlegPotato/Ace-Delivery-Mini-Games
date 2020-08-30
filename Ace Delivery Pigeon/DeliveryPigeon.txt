@@ -1,0 +1,231 @@
+title Delivery Pigeon
+author Bootleg Potato
+homepage www.BootlegPotato.com
+
+(
+A remake of Lexaloffle's Neko Puzzle game with code originally provided by puzzlescript.net. Made with permission.
+www.lexaloffle.com/neko.htm (original game)
+www.puzzlescript.net (where the remake code came from)
+
+Please check out Lexaloffle's website for other projects and games. I'm a big fan of the PICO-8 Project.
+)
+
+background_color  black
+text_color #60f0e0
+
+========
+OBJECTS
+========
+
+Background .
+#f0d0b0
+
+Background2 *
+#f0d0b0 #d0a060
+00000
+01000
+00000
+00010
+00000
+
+Background3 %
+#f0d0b0 #d0a060
+00000
+00000
+00100
+01000
+00000
+
+Background4 $
+#f0d0b0 #d0a060
+00000
+00000
+00000
+01000
+00000
+
+Mail M
+#c00060 white
+.....
+00000
+10001
+11011
+.....
+
+Player P
+#0060e0 white
+.....
+1.1.1
+.111.
+..1..
+.....
+
+Wall #
+#007040 #10a060
+00000
+01110
+01110
+01110
+00000
+
+=======
+LEGEND
+=======
+
+=========
+SOUNDS
+=========
+
+startgame 64930302
+endlevel 63636303 
+endgame 74955903
+
+(Pigeon Flying)
+sfx0 46863909
+
+================
+COLLISIONLAYERS
+================
+
+Background
+Background2, Background3, Background4
+Player, Mail
+Wall
+
+======
+RULES
+======
+
+[ > Player | ... | Mail ] -> [ | ... | Player ] sfx0
+
+
+(if you're not sure what this line does, try removing it, and see what happens)
+[ > Player ] -> [ Player]
+
+==============
+WINCONDITIONS
+==============
+No Mail
+
+=======
+LEVELS
+=======
+
+message The Delivery Pigeon has dropped all the mail. Help collect all the letters. 
+
+message Level 1
+
+#####
+#M.M#
+#.$%#
+#MM.#
+#%.M#
+#.P.#
+#####
+
+message Level 2
+
+############
+#.M....%...#
+#....P...$.#
+#.M$.M...M.#
+############
+
+message Level 3
+
+######
+#M.PM#
+#..$%#
+#M..M#
+#%...#
+#M...#
+######
+
+message Level 4
+
+#####
+#M.M#
+#.$%#
+#Mp.#
+#%.M#
+#M..#
+#####
+
+message Level 5
+
+#########
+#..M....#
+#...%...#
+#..M..$.#
+#.$.....#
+#p.M.M.M#
+#...%...#
+#..M...M#
+#########
+
+message Level 6
+
+###########
+#..M$...M.#
+#.%.......#
+#..M.P..M.#
+#....$....#
+#..M....%.#
+###########
+
+message Level 7
+
+#######
+#..M.M#
+#...$.#
+#M.P.M#
+#.%...#
+#..M..#
+#######
+
+message Level 8
+
+###########
+#..M$...M.#
+#.%...M...#
+#M.P....M.#
+#....$....#
+#..M..M.%.#
+###########
+
+message Level 9
+
+########
+#.M.M.M#
+#..$...#
+#.M...M#
+#....%.#
+#P..M..#
+########
+
+
+message Level 10
+
+###########
+#.%..M...M#
+#...$.....#
+#..M.M.M..#
+#.....$..M#
+#P.M.M.M..#
+#...%...$.#
+#..M...M.M#
+###########
+
+
+message Level 11
+
+################
+#.$......M...M.#
+#M..%.M....$...#
+#.$............#
+#M..P.......M.M#
+#.........%....#
+#.%.M.M..M...$.#
+################
+
+message congratulations!

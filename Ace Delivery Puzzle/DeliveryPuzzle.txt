@@ -1,0 +1,350 @@
+title Ace Delivery Puzzle
+author Bootleg Potato
+homepage www.BootlegPotato.com
+
+
+background_color  #a7ba4a
+text_color #234331
+
+
+========
+OBJECTS
+========
+
+
+Background
+#a7ba4a
+
+
+MailBox
+#234331 #537a3e
+.....
+00000
+10001
+11011
+.....
+
+
+Wall
+#537a3e #234331
+11111
+10001
+10001
+10001
+11111
+
+
+Player
+#234331 #d3e29a #d1f04b #537a3e
+.333.
+.333.
+.010.
+.111.
+.....
+
+
+Mail
+#d3e29a #537a3e
+.....
+11111
+01110
+00100
+.....
+
+
+Pit
+#234331
+.....
+.000.
+.000.
+.000.
+.....
+
+
+Block
+#537a3e
+.....
+.000.
+.000.
+.000.
+.....
+
+
+PitBlock
+#234331 #a7ba4a
+.....
+.000.
+.010.
+.000.
+.....
+
+
+BPit
+#234331
+
+
+BBlock
+#537a3e
+
+
+=======
+LEGEND
+=======
+
+
+(Terrain Tiles)
+. = Background
+# = Wall
+
+
+P = Player
+
+
+(Goal Tiles)
+M = Mail
+W = MailBox
+% = Mail and MailBox
+
+
+(Blocks Tiles)
+O = Block
+X = Pit
+N = PitBlock
+
+
+(Pit Tiles)
+Y = BPit
+Q = BBlock
+
+
+
+
+(Fillings Pits)
+PitFiller = Block
+Filling = PitBlock
+
+
+(Filling Big Pits)
+BPitFiller = BBlock
+BFilling = Wall (Yes a big pit becomes a wall)
+
+
+=======
+SOUNDS
+=======
+
+
+startgame 64930302
+
+
+(Moving Object Sounds)
+Mail MOVE 96086307
+Block MOVE 36772507
+BBlock MOVE 79099907
+
+
+(Filling Pit Sound)
+sfx0 86583504
+
+
+(Filling BPit Sound)
+sfx1 76146702
+
+
+endlevel 63636303 
+
+
+endgame 74955903
+
+
+================
+COLLISIONLAYERS
+================
+
+
+Background
+Pit, BPit 
+PitBlock
+MailBox
+Player, Wall, Mail, Block, BBlock
+
+
+
+======
+RULES
+======
+
+
+
+(Player Push Mail)
+[ >  Player | Mail ] -> [  >  Player | > Mail  ]
+
+
+(Player Push Block)
+[ >  Player | Block ] -> [  >  Player | > Block  ]
+
+
+(Player Push BBlock)
+[ >  Player | BBlock ] -> [  >  Player | > BBlock  ]
+
+
+(don't move into Pit)
+[> Player|Pit no Filling] -> [Player|Pit] (Don't move Player)
+[> Mail|Pit no Filling] -> [Mail|Pit] (Don't move Mail)
+
+
+(don't move into BPit)
+[> Player|BPit no BFilling] -> [Player|BPit] (Don't move Player)
+[> Mail|BPit no BFilling] -> [Mail|BPit] (Don't move Mail)
+
+
+
+
+(Don't move Blocks on Mailboxes)
+[> Block|Mailbox] -> [Block|Mailbox] 
+
+
+(if a Block is on top of a Pit turn it into a PitBlock)
+late [Pit no Filling PitFiller] -> [Pit PitBlock] sfx0
+
+
+(if a BBlock is on top of a BPit turn it into a Wall)
+late [BPit no BFilling BPitFiller] -> [BPit Wall] sfx1
+
+
+==============
+WINCONDITIONS
+==============
+
+
+All Mail on MailBox
+
+
+=======
+LEVELS
+=======
+
+
+message Level 1: First Delivery
+
+
+####### (1J)
+#.....#
+#.#O#.#
+#P#.#.#
+#.#X#.#
+#..M..#
+###W###
+
+
+message Level 2: Around The Corner
+
+
+####### (2C)
+#.....#
+#.MXO.#
+#.P#W.#
+#######
+
+
+message Level 3: Through The Hedge
+
+
+###### (3B)
+#....#
+#.#W.#
+#OMX.#
+#X.OP#
+#...##
+######
+
+
+message Level 4: Wrong Address
+
+
+####### (4H)
+##...##
+#..O..#
+#P#MO.#
+#.XOX.#
+##...##
+###W###
+
+
+message Level 5: Over The Wall
+
+
+######## (5D)
+#..OX..#
+#PMXO.W#
+#..OX..#
+########
+
+
+message Level 6: Down The Street
+
+
+####### (6E)
+#XOpOX#
+#.#W#.#
+#.#.O.#
+#.OX#.#
+###XOO#
+#XOM#X#
+#.#.O.#
+#..OX##
+#######
+
+
+message Level 7: Attack The Block
+
+
+####### (7G)
+#P....#
+#.OMO.#
+##XOX##
+#.OXO.#
+#.....#
+###W###
+
+
+message Level 8: Nothing To See Here
+
+
+####### (8A)
+#.....#
+#.#M#.#
+#WXO..#
+##O#O.#
+#P.O..#
+#######
+
+
+message Level 9: Nakatomi Plaza
+
+
+##### (9F)
+#.P.#
+#OMO#
+#XOX#
+#XO##
+#OX.#
+#...#
+###W#
+
+
+message Level 10: I Ran Out Of Ideas
+
+
+######### (10I)
+#POXOXO.#
+#O#O#O#O#
+#XOXOXOX#
+#O#O#O#.#
+#..XMXOW#
+#########
+
+
+message Congratulations!
+
+
