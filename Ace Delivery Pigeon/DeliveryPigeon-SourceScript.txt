@@ -20,7 +20,7 @@ OBJECTS
 Background .
 #f0d0b0
 
-Background2 *
+GroundClutter1 *
 #f0d0b0 #d0a060
 00000
 01000
@@ -28,7 +28,7 @@ Background2 *
 00010
 00000
 
-Background3 %
+GroundClutter2 %
 #f0d0b0 #d0a060
 00000
 00000
@@ -36,7 +36,7 @@ Background3 %
 01000
 00000
 
-Background4 $
+GroundClutter3 $
 #f0d0b0 #d0a060
 00000
 00000
@@ -88,7 +88,7 @@ COLLISIONLAYERS
 ================
 
 Background
-Background2, Background3, Background4
+GroundClutter1, GroundClutter2, GroundClutter3
 Player, Mail
 Wall
 
@@ -111,7 +111,37 @@ No Mail
 LEVELS
 =======
 
+message Better control explination goes here.
+
 message The Delivery Pigeon has dropped all the mail. Help collect all the letters. 
+
+message Demo Level Small
+
+########
+#.$....#
+#...%..#
+#.$....#
+#...P..#
+#......#
+#.%.M..#
+########
+
+message Demo Level Larg
+
+##############
+#.$..........#
+#...%......$.#
+#.$..........#
+#...P.......M#
+#.........%..#
+#.%..........#
+#............#
+#............#
+#............#
+#............#
+#............#
+#............#
+##############
 
 message Level 1
 
