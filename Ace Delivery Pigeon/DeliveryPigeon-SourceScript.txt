@@ -127,7 +127,7 @@ message Level 1
 #.......#
 #########
 
-message Level 1
+message Level 2
 
 #########
 #.......#
@@ -139,7 +139,31 @@ message Level 1
 #.......#
 #########
 
-message Level 1
+message Level 3
+
+#########
+#.......#
+#...M.M.#
+#.......#
+#...P.M.#
+#.......#
+#.......#
+#.......#
+#########
+
+message Level 4
+
+#########
+#.......#
+#...M...#
+#.......#
+#...P...#
+#.......#
+#M..M..M#
+#.......#
+#########
+
+message Level 5
 
 ########
 #..%...#
@@ -150,28 +174,30 @@ message Level 1
 #..P...#
 ########
 
-message Level 2
+message Level 6
 
 ########
 #.$....#
 #M...%.#
-#.$P...#
+#.$.P..#
 #...$..#
-#M.M.M.#
+#M..M.M#
 #.%....#
 ########
 
-message Level 3
+message Level 7
 
-######
-#M.PM#
-#..$%#
-#M..M#
-#%...#
-#M...#
-######
+#########
+#.......#
+#M..P.M.#
+#.......#
+#.M...M.#
+#.......#
+#.M.....#
+#.......#
+#########
 
-message Level 4
+message Level 8
 
 #####
 #M.M#
@@ -181,7 +207,7 @@ message Level 4
 #M..#
 #####
 
-message Level 5
+message Level 9
 
 #########
 #..M....#
@@ -193,7 +219,7 @@ message Level 5
 #..M...M#
 #########
 
-message Level 6
+message Level 10
 
 ###########
 #..M$...M.#
@@ -203,7 +229,7 @@ message Level 6
 #..M....%.#
 ###########
 
-message Level 7
+message Level 11
 
 #######
 #..M.M#
@@ -213,7 +239,7 @@ message Level 7
 #..M..#
 #######
 
-message Level 8
+message Level 12
 
 ###########
 #..M$...M.#
@@ -223,7 +249,7 @@ message Level 8
 #..M..M.%.#
 ###########
 
-message Level 9
+message Level 13
 
 ########
 #.M.M.M#
@@ -234,7 +260,7 @@ message Level 9
 ########
 
 
-message Level 10
+message Level 14
 
 ###########
 #.%..M...M#
@@ -247,7 +273,7 @@ message Level 10
 ###########
 
 
-message Level 11
+message Level 15
 
 ################
 #.$......M...M.#
