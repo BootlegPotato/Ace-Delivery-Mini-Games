@@ -111,9 +111,19 @@ No Mail
 LEVELS
 =======
 
-message Better control explination goes here.
+
 
 message The Delivery Pigeon has dropped all the mail. Help collect all the letters. 
+
+message This is a puzzle game. The rules are that the Pigeon can only fly in the direction of a letter on the ground. 
+
+message When the pigeon lands on a letter it is automatically picked up. The level is completed when all the letters are collected. 
+
+message You can press R to reset the level if you get stuck or press Z to undo your last move.
+
+message Are you bad enough to save the mail?
+
+message Good luck!
 
 message Level 1
 
@@ -155,37 +165,27 @@ message Level 4
 
 #########
 #.......#
-#...M...#
+#M..M..M#
 #.......#
 #...P...#
 #.......#
-#M..M..M#
+#...M...#
 #.......#
 #########
 
 message Level 5
 
-########
-#..%...#
-#M...M.#
-#...$..#
-#M.M...#
-#.$..M.#
-#..P...#
-########
+#########
+#.......#
+#.M...M.#
+#.......#
+#.M.M...#
+#.....M.#
+#...P...#
+#.......#
+#########
 
 message Level 6
-
-########
-#.$....#
-#M...%.#
-#.$.P..#
-#...$..#
-#M..M.M#
-#.%....#
-########
-
-message Level 7
 
 #########
 #.......#
@@ -197,121 +197,113 @@ message Level 7
 #.......#
 #########
 
+message Level 7
+
+#########
+#.......#
+#.M...M.#
+#.......#
+#.M.P.M.#
+#.......#
+#.M.....#
+#.......#
+#########
+
 message Level 8
 
-#####
-#M.M#
-#.$%#
-#Mp.#
-#%.M#
-#M..#
-#####
-
-message Level 9
-
-#########
-#..M....#
-#...%...#
-#..M..$.#
-#.$.....#
-#p.M.M.M#
-#...%...#
-#..M...M#
-#########
-
-message Level 10
-
-###########
-#..M$...M.#
-#.%.......#
-#..M.P..M.#
-#....$....#
-#..M....%.#
-###########
-
-message Level 11
-
-#######
-#..M.M#
-#...$.#
-#M.P.M#
-#.%...#
-#..M..#
-#######
-
-message Level 12
-
-###########
-#..M$...M.#
-#.%...M...#
-#M.P....M.#
-#....$....#
-#..M..M.%.#
-###########
-
-message Level 13
-
-########
-#.M.M.M#
-#..$...#
-#.M...M#
-#....%.#
-#P..M..#
-########
-
-
-message Level 14
-
-###########
-#.%..M...M#
-#...$.....#
-#..M.M.M..#
-#.....$..M#
-#P.M.M.M..#
-#...%...$.#
-#..M...M.M#
-###########
-
-
-message Level 15
-
-################
-#.$......M...M.#
-#M..%.M....$...#
-#.$............#
-#M..P.......M.M#
-#.........%....#
-#.%.M.M..M...$.#
-################
-
-message congratulations!
-
-message Demo Level Small
-
 #########
 #.......#
+#...M.M.#
 #.......#
-#.......#
-#...P...#
+#.M.P.M.#
 #.......#
 #...M...#
 #.......#
 #########
 
-message Demo Level Larg
+message Level 9
 
-###############
-#.............#
-#.............#
-#.............#
-#.............#
-#....P.......M#
-#.............#
-#.............#
-#.............#
-#.............#
-#.............#
-#.............#
-#.............#
-#.............#
-###############
+#########
+#.......#
+#.M....M#
+#.......#
+#...P...#
+#.......#
+#.M.M.M.#
+#.......#
+#########
+
+message Level 10
+
+#########
+#.......#
+#.M.M.M.#
+#.......#
+#.M...M.#
+#.......#
+#P..M...#
+#.......#
+#########
+
+message Level 11
+
+#########
+#.......#
+#M.M.M..#
+#.......#
+#..MP...#
+#.M..M..#
+#..M....#
+#.......#
+#########
+
+message Level 12
+
+#########
+#..M....#
+#.......#
+#..M....#
+#.......#
+#P.M.M.M#
+#.......#
+#..M...M#
+#########
+
+message Level 13
+
+#########
+#.......#
+#..M...M#
+#....M..#
+#M.P...M#
+#.......#
+#..M.M..#
+#.......#
+#########
+
+message Level 14
+
+#########
+#...M..M#
+#.......#
+#.M.MM..#
+#......M#
+#PM.MM..#
+#.......#
+#.M..M.M#
+#########
+
+
+message Level 15
+
+#########
+#...M.M.#
+#M.M....#
+#.......#
+#MP..M.M#
+#.......#
+#.MMM...#
+#.......#
+#########
+
+message congratulations!
