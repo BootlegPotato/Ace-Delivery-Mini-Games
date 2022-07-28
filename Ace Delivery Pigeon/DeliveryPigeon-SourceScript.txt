@@ -68,6 +68,22 @@ Wall #
 01110
 00000
 
+Wall2 2
+#0468BF #308AD9
+00000
+01110
+01110
+01110
+00000
+
+Wall3 3
+#8C0335 #D9487D
+00000
+01110
+01110
+01110
+00000
+
 =======
 LEGEND
 =======
@@ -90,7 +106,7 @@ COLLISIONLAYERS
 Background
 GroundClutter1, GroundClutter2, GroundClutter3
 Player, Mail
-Wall
+Wall, Wall2, Wall3
 
 ======
 RULES
@@ -113,31 +129,19 @@ LEVELS
 
 
 
-message The Delivery Pigeon has dropped all the mail. Help collect all the letters. 
+message The Delivery Pigeon has dropped all the mail. Your task is to collect all the missing letters. (1/5)
 
-message This is a puzzle game. The rules are that the Pigeon can only fly in the direction of a letter on the ground. 
+message This is a puzzle game. The rules are that the Pigeon can only fly in the direction of a letter on the ground. (2/5)
 
-message When the pigeon lands on a letter it is automatically picked up. The level is completed when all the letters are collected. 
+message When the pigeon lands on a letter it is automatically picked up. The level is completed when all the letters are collected. (3/5)
 
-message You can press R to reset the level if you get stuck or press Z to undo your last move.
+message You can press R to reset the level if you get stuck or press Z to undo your last move. (4/5)
 
-message Are you bad enough to save the mail?
+message Are you bad enough to save the mail? (5/5)
 
-message Good luck!
-
-message Level 1
-
-#########
-#.......#
-#...M...#
-#.......#
-#...P...#
-#.......#
-#.......#
-#.......#
-#########
-
-message Level 2
+message Good luck! (6/5)
+ 
+message Level 1 "First Steps"
 
 #########
 #.......#
@@ -145,11 +149,23 @@ message Level 2
 #.......#
 #...P...#
 #.......#
+#.......#
+#.......#
+#########
+
+message Level 2 "Second Steps"
+
+#########
+#.......#
+#...M...#
+#.......#
+#...P...#
+#.......#
 #...M...#
 #.......#
 #########
 
-message Level 3
+message Level 3 "Three More Steps"
 
 #########
 #.......#
@@ -161,7 +177,7 @@ message Level 3
 #.......#
 #########
 
-message Level 4
+message Level 4 "There Is a Forth Step"
 
 #########
 #.......#
@@ -173,7 +189,7 @@ message Level 4
 #.......#
 #########
 
-message Level 5
+message Level 5 "Return of the Fifth"
 
 #########
 #.......#
@@ -185,125 +201,157 @@ message Level 5
 #.......#
 #########
 
-message Level 6
+message Tutorial Completed
 
-#########
-#.......#
-#M..P.M.#
-#.......#
-#.M...M.#
-#.......#
-#.M.....#
-#.......#
-#########
+message Level 6 "Revenge of the Sixth"
 
-message Level 7
+222222222
+2.......2
+2M..P.M.2
+2.......2
+2.M...M.2
+2.......2
+2.M.....2
+2.......2
+222222222
 
-#########
-#.......#
-#.M...M.#
-#.......#
-#.M.P.M.#
-#.......#
-#.M.....#
-#.......#
-#########
+message Level 7 "Lucky Number"
 
-message Level 8
+222222222
+2.......2
+2.M...M.2
+2.......2
+2.M.P.M.2
+2.......2
+2.M.....2
+2.......2
+222222222
 
-#########
-#.......#
-#...M.M.#
-#.......#
-#.M.P.M.#
-#.......#
-#...M...#
-#.......#
-#########
+message Level 8 "Ocho"
 
-message Level 9
+222222222
+2.......2
+2...M.M.2
+2.......2
+2.M.P.M.2
+2.......2
+2...M...2
+2.......2
+222222222
 
-#########
-#.......#
-#.M....M#
-#.......#
-#...P...#
-#.......#
-#.M.M.M.#
-#.......#
-#########
+message Level 9 "Nine"
 
-message Level 10
+222222222
+2.......2
+2.M....M2
+2.......2
+2...P...2
+2.......2
+2.M.M.M.2
+2.......2
+222222222
 
-#########
-#.......#
-#.M.M.M.#
-#.......#
-#.M...M.#
-#.......#
-#P..M...#
-#.......#
-#########
+message Level 10 "Place Holder Title"
 
-message Level 11
+222222222
+2.......2
+2.M.M.M.2
+2.......2
+2.M...M.2
+2.......2
+2P..M...2
+2.......2
+222222222
 
-#########
-#.......#
-#M.M.M..#
-#.......#
-#..MP...#
-#.M..M..#
-#..M....#
-#.......#
-#########
+message Almost Done!
 
-message Level 12
+message Level 11 "This One Goes to Eleven"
 
-#########
-#..M....#
-#.......#
-#..M....#
-#.......#
-#P.M.M.M#
-#.......#
-#..M...M#
-#########
+333333333
+3.......3
+3M.M.M..3
+3.......3
+3..MP...3
+3.M..M..3
+3..M....3
+3.......3
+333333333
 
-message Level 13
+message Level 12 "Holy Cow 12!"
 
-#########
-#.......#
-#..M...M#
-#....M..#
-#M.P...M#
-#.......#
-#..M.M..#
-#.......#
-#########
+333333333
+3..M....3
+3.......3
+3..M....3
+3.......3
+3P.M.M.M3
+3.......3
+3..M...M3
+333333333
 
-message Level 14
+message Level 13 "..."
 
-#########
-#...M..M#
-#.......#
-#.M.MM..#
-#......M#
-#PM.MM..#
-#.......#
-#.M..M.M#
-#########
+333333333
+3.......3
+3..M...M3
+3....M..3
+3M.P...M3
+3.......3
+3..M.M..3
+3.......3
+333333333
+
+message Level 14 "Where Were We?"
+
+333333333
+3...M..M3
+3.......3
+3.M.MM..3
+3......M3
+3PM.MM..3
+3.......3
+3.M..M.M3
+333333333
 
 
-message Level 15
+message Level 15 "The Last One!"
 
-#########
-#...M.M.#
-#M.M....#
-#.......#
-#MP..M.M#
-#.......#
-#.MMM...#
-#.......#
-#########
+333333333
+3...M.M.3
+3M.M....3
+3.......3
+3MP..M.M3
+3.......3
+3.MMM...3
+3.......3
+333333333
 
 message congratulations!
+
+message The End
+
+message Fin
+
+message That's a wrap!
+
+message In the can as they say.
+
+message You closed the book on that one.
+
+message Cross that off your todo list.
+
+message Mission accomplished.
+
+message We can all go home.
+
+message Done and dusted.
+
+message That's that.
+
+message Mark that as a win.
+
+message Just checking a thesaurus...
+
+message The most literate saurus in history...
+
+message And they say I used up all the synonyms for done.
