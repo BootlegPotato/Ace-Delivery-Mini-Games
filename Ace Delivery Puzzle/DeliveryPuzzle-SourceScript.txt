@@ -37,8 +37,8 @@ Wall
 Player
 #234331 #d3e29a #d1f04b #537a3e
 .333.
-.333.
-.010.
+13331
+10101
 .111.
 .....
 
@@ -346,5 +346,4 @@ message Level 10: I Ran Out Of Ideas
 
 
 message Congratulations!
-
 
