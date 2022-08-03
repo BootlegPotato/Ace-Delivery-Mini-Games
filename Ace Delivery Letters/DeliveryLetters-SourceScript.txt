@@ -2,26 +2,19 @@ title Ace Delivery Letters
 author Bootleg Potato
 homepage www.BootlegPotato.com
 
-background_color  #d5d5d5
-text_color #171b1b
+background_color  #e8dbca
+text_color #d31f76
 
 ========
 OBJECTS
 ========
 
 Background
-#d5d5d5
+#e8dbca
 
-(MailBox
-#070909 #696a6a
-.....
-00000
-10001
-11011
-.....)
 
 MailBox
-#171b1b 
+#d31f76 
 .....
 .....
 ..0..
@@ -29,7 +22,7 @@ MailBox
 .....
 
 Wall
-#696a6a #171b1b
+#dd989b #d31f76
 11111
 10001
 10101
@@ -37,58 +30,21 @@ Wall
 11111
 
 Player
-#171b1b #ffffff #696a6a
+#e8dbca #dd989b #d31f76
 .222.
-.222.
+12221
 10101
 .111.
 .....
 
-(Mail
-#ffffff #696a6a
-.....
-11111
-01110
-00100
-.....)
-
 Mail
-#ffffff #696a6a
+#dd989b #d31f76
 .....
 11111
 01.10
 00100
 .....
 
-Pit
-#171b1b
-.....
-.000.
-.000.
-.000.
-.....
-
-Block
-#696a6a
-.....
-.000.
-.000.
-.000.
-.....
-
-PitBlock
-#171b1b #d5d5d5
-.....
-.000.
-.010.
-.000.
-.....
-
-BPit
-#171b1b
-
-BBlock
-#696a6a
 
 =======
 LEGEND
@@ -105,23 +61,6 @@ m = Mail
 w = MailBox
 % = Mail and MailBox
 
-(Blocks Tiles)
-o = Block
-x = Pit
-n = PitBlock
-
-(Pit Tiles)
-y = BPit
-q = BBlock
-
-
-(Fillings Pits)
-PitFiller = Block
-Filling = PitBlock
-
-(Filling Big Pits)
-BPitFiller = BBlock
-BFilling = Wall (Yes a big pit becomes a wall)
 
 =======
 SOUNDS
@@ -131,14 +70,6 @@ startgame 64930302
 
 (Moving Object Sounds)
 Mail MOVE 96086307
-Block MOVE 36772507
-BBlock MOVE 79099907
-
-(Filling Pit Sound)
-sfx0 86583504
-
-(Filling BPit Sound)
-sfx1 76146702
 
 endlevel 63636303 
 
@@ -149,10 +80,8 @@ COLLISIONLAYERS
 ================
 
 Background
-Pit, BPit 
-PitBlock
 MailBox
-Player, Wall, Mail, Block, BBlock
+Player, Wall, Mail
 
 ======
 RULES
@@ -161,29 +90,6 @@ RULES
 (Player Push Mail)
 [ >  Player | Mail ] -> [  >  Player | > Mail  ]
 
-(Player Push Block)
-[ >  Player | Block ] -> [  >  Player | > Block  ]
-
-(Player Push BBlock)
-[ >  Player | BBlock ] -> [  >  Player | > BBlock  ]
-
-(don't move into Pit)
-[> Player|Pit no Filling] -> [Player|Pit] (Don't move Player)
-[> Mail|Pit no Filling] -> [Mail|Pit] (Don't move Mail)
-
-(don't move into BPit)
-[> Player|BPit no BFilling] -> [Player|BPit] (Don't move Player)
-[> Mail|BPit no BFilling] -> [Mail|BPit] (Don't move Mail)
-
-
-(Don't move Blocks on Mailboxes)
-[> Block|Mailbox] -> [Block|Mailbox] 
-
-(if a Block is on top of a Pit turn it into a PitBlock)
-late [Pit no Filling PitFiller] -> [Pit PitBlock] sfx0
-
-(if a BBlock is on top of a BPit turn it into a Wall)
-late [BPit no BFilling BPitFiller] -> [BPit Wall] sfx1
 
 ==============
 WINCONDITIONS
@@ -300,7 +206,6 @@ message Level 10
 .#########.
 
 message Congratulations!
-
 
 
 
