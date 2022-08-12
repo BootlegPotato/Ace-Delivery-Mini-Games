@@ -101,18 +101,19 @@ All Mail on MailBox
 LEVELS
 =======
 
-message Level 1
 
-......###
-......#w#
-......#.#
-......#m#
-......#.#
-#######.#
-#p......#
-#########
+#######
+#p.m.w#
+#######
 
-message Level 2
+
+..###
+..#w#
+###m#
+#p..#
+#####
+
+
 
 ...###...
 ...#w#...
@@ -124,7 +125,7 @@ message Level 2
 ...#w#...
 ...###...
 
-message Level 3
+
 
 #######
 #.....#
@@ -136,7 +137,7 @@ message Level 3
 #.....#
 #######
 
-message Level 4
+
 
 #######
 #.....#
@@ -146,7 +147,7 @@ message Level 4
 ...#ww#
 ...####
 
-message Level 5
+
 
 ..####
 ###..#
@@ -156,7 +157,7 @@ message Level 5
 ..#w.#
 ..####
 
-message Level 6
+
 
 ######
 #....#
@@ -167,7 +168,7 @@ message Level 6
 #p.#..
 ####..
 
-message Level 7
+
 
 #######
 ##.wm.#
@@ -175,7 +176,7 @@ message Level 7
 #pw..w#
 #######
 
-message Level 8
+
 
 ######
 #w.m.#
@@ -184,7 +185,7 @@ message Level 8
 #.w..#
 ######
 
-message Level 9
+
 
 #####
 #...#
@@ -195,7 +196,7 @@ message Level 9
 #...#
 #####
 
-message Level 10
+
 
 ###########
 #....%....#
@@ -205,7 +206,6 @@ message Level 10
 .#...p...#.
 .#########.
 
-message Congratulations!
 
 
 
